@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <dev.iamfoodie.constraintlayoutcompoundcomponents.ColorSelector
+	android:layout_width="match_parent"
+	app:layout_constraintTop_toTopOf="parent"
+	android:id="@+id/color_selector"
+	app:defaultColorIndex="3"
+	app:colors="@array/colors"
+	android:layout_height="wrap_content"/>
+
+  <Button
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:layout_constraintTop_toBottomOf="@id/color_selector"
+	android:layout_marginStart="20dp"
+	android:id="@+id/check_button"
+	android:layout_marginEnd="20dp"
+	android:text="Check"
+	/>
+
+  <View
+	android:layout_width="match_parent"
+	android:layout_height="?attr/actionBarSize"
+	android:id="@+id/check_view"
+	app:layout_constraintBottom_toBottomOf="parent"
+	android:background="@android:color/darker_gray"
+	/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

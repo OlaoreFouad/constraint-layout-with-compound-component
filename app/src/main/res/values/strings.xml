@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Constraint Layout Compound Components</string>
+
+    <string-array name="colors">
+        <item>#2e3445</item>
+        <item>#e44321</item>
+        <item>#475132</item>
+        <item>#98e443</item>
+        <item>#443522</item>
+        <item>#12e333</item>
+        <item>#193444</item>
+    </string-array>
+</resources>
